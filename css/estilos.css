@@ -1,0 +1,401 @@
+/* ESTO ES UN COMENTARIO*/
+
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.volver {
+    color: #B1CC74;
+    font-size: 20px;
+}
+
+section ul li {
+    color: #1B998B;
+}
+
+li {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.inicio {
+    
+    min-height: 91vh;
+    background-size: cover;
+    background-position: center; 
+    background: #DBE6F6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(6, 28%, 15%, 0.712), hsla(216, 61%, 91%, 0.603)) , url("../img/header.jpg");;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(6, 28%, 15%, 0.712), hsla(216, 61%, 91%, 0.603)) , url("../img/header.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+header .open,
+header .close {
+  display: none;
+}
+
+
+header nav {
+    padding: 20px 50px 0 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+  
+header nav ul li a {
+    color:#222;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+header nav ul li a:hover {
+    text-decoration:underline ;
+}
+
+header .contenedor div {
+    text-align: center;
+}
+
+header .contenedor div h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+header .contenedor div h2 .destacado {
+    font-size: 70px;
+    font-weight: 900;
+    color: #FFF;
+}
+
+.intro {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+
+}
+section h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #222;
+    margin-bottom: 20px;
+}
+  
+section .subtitulo {
+    color: #aaa;
+    font-size: 20px;
+}
+
+#principal {
+    padding-top: 40px;
+    
+}
+
+#services {
+    padding-top: 40px; 
+}
+
+#services ul {
+    margin-top: 5rem;
+}
+
+#services ul li {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+#services ul li div {
+    border-left: 1px solid #aaa;
+    padding: 0.8rem 0 1rem 1.5rem;
+    width: 85%;
+}
+
+#services ul li div h4 {
+    color: #222;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#services ul li div p {
+    color: #aaa;
+    font-size: 15px;
+}
+
+#personas {
+    padding-top: 40px;
+  
+}
+#personas ul li {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+  
+#personas ul li div {
+    padding: 0.8rem 0 1rem 1.5rem;
+    width: 90%;
+}
+  
+#personas ul li div h4 {
+    color: #222;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+  
+#personas ul li div p {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+#personas h2::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 10px;
+    background: #222;
+    transition: width 1s;
+}
+  
+#personas h2:hover::after {
+    width: 300px;
+}
+
+
+section h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+#pie {
+    background:#eee ;
+    padding-top: 40px;
+    text-align:center ;
+    font-weight: 300;
+}
+
+#trabajos {
+    padding-top: 40px;
+}
+
+#trabajos ul {
+    margin-top: 10px; 
+    display: flex;
+    justify-content:space-evenly ;
+    flex-wrap: wrap;
+  
+}
+  
+#trabajos ul li {
+    line-height: 0;
+    width: 24%;
+    
+}
+  
+#trabajos ul li img {
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
+     
+}
+
+.fila {
+    padding: 48px 0;
+} 
+  
+.fila .contenedor { 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+  
+.fila .info {
+    width: 30%;
+}
+  
+form {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+  
+form input {
+    width: 48%;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+  
+form textarea {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    resize: none;
+    height: 100px;
+}
+  
+.btn_enviar {
+    border: none;
+    background: #a0c8df;
+    color: #fff;
+    padding: 10px 20px;
+    width: auto;
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+}
+.btn_enviar:hover {
+    background:#a0c8dF;
+}
+  
+/* MOBILE */
+
+@media (max-width: 768px) {
+  
+header nav {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: top 0.5s, opacity 1s;
+    background: #f2f2f2;
+}
+#nav:target {
+    top: 0;
+    opacity: 1;
+}
+header .open,
+header .close {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+header .close {
+    left: 20px;
+}
+header .open img,
+header .close img {
+    width: 30px;
+}
+header h1 {
+    margin-bottom: 40px;
+}
+header h1 a {
+    font-size: 3rem;
+}
+header nav ul {
+    flex-direction: column;
+}
+header nav ul li {
+    margin: 10px 0;
+}
+header nav ul li a {
+    font-size: 1.5rem;
+}
+    
+header .contenedor div h2 .destacado {
+    font-size: 50px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+section h2 {
+    font-size: 2 rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#services {
+    padding: 4rem 0 0;
+}
+#services h2 span {
+    display: inline;
+}
+section .subtitulo {
+    text-align: center;
+}
+#services ul {
+    margin-top: 2rem;
+}
+#services ul li {
+    flex-direction: column;
+    align-items: center;
+}
+#services ul li div {
+    border: none;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+#trabajos {
+    padding-top: 2rem;
+}
+#trabajos ul li {
+    width: 50%;
+}
+
+#personas ul li {
+    width: 100%;
+}
+
+.fila .contenedor {
+    flex-direction: column-reverse;
+}
+.fila .info {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: center;
+}
+form {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+form input {
+    width: 100%;
+}
+.btn_enviar {
+    position: static;
+}
+}
